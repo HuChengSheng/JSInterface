@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> </title>
+		<script>
+		function start(){
+			JSInterface.startNewActivity();
+		}
+		function toast(){
+			var value = document.getElementById("id_toast").value ;
+			JSInterface.toast(value);
+		}
+		function getValue(){
+			var value = JSInterface.getValue();
+			document.getElementById("id_getValue").value = value ;
+		}
+		function inputText(value){
+			document.getElementById("id_toast").value = value;
+		}
+		</script>
+	</head>
+	<body>
+		<p>WebView content</p>
+		<input type="button" value="Start Activity" onclick="start()"/>
+		<br/><br/>
+		<input id="id_toast" type="txt" value ="" placeholder="input toast value" />
+		<input type="button" value="Toast" onclick="toast()"/>
+		<br/><br/>
+		<input id="id_getValue" type="txt" value ="" placeholder="show the get value" />
+		<input type="button" value="Get Android Date" onclick="getValue()"/>
+	</body>
+</html>
