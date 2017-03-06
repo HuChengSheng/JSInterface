@@ -9,8 +9,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="@string/app_set"
         android:onClick="inputText" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_get"
+        android:onClick="getText" />
     <WebView
         android:id="@+id/wv_test"
         android:layout_width="match_parent"

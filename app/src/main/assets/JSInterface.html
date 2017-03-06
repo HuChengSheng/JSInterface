@@ -3,19 +3,27 @@
 	<head> 
 		<title> </title>
 		<script>
+		/* start a new Activity*/
 		function start(){
 			JSInterface.startNewActivity();
 		}
+		/* call Android Toast */
 		function toast(){
 			var value = document.getElementById("id_toast").value ;
 			JSInterface.toast(value);
 		}
+		/* get Android Date value*/
 		function getValue(){
 			var value = JSInterface.getValue();
 			document.getElementById("id_getValue").value = value ;
 		}
+		/* Android SET call this func*/
 		function inputText(value){
 			document.getElementById("id_toast").value = value;
+		}
+		/* Android GET call this func async*/
+		function getText(){
+			return document.getElementsByTagName("p")[0].innerHTML ;
 		}
 		</script>
 	</head>

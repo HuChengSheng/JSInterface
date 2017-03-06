@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">JSInterface</string>
+    <string name="app_set">SET</string>
+    <string name="app_get">GET</string>
 </resources>
